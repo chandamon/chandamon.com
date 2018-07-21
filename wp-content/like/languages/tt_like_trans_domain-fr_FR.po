@@ -1,0 +1,249 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Like\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-05 19:25-0800\n"
+"PO-Revision-Date: 2010-05-05 19:29-0800\n"
+"Last-Translator: Bottomless <dev@bottomlessinc.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: tt_like_widget.php:440
+msgid "Appearance"
+msgstr "Apparence"
+
+#: tt_like_widget.php:443
+msgid "Width:"
+msgstr "Largeur:"
+
+#: tt_like_widget.php:447
+msgid "Height:"
+msgstr "Hauteur:"
+
+#: tt_like_widget.php:451
+msgid "Layout:"
+msgstr "Format:"
+
+#: tt_like_widget.php:464
+msgid "Verb to display:"
+msgstr "Verbe a afficher:"
+
+#: tt_like_widget.php:477
+msgid "Font:"
+msgstr "Police de caractères:"
+
+#: tt_like_widget.php:490
+msgid "Color Scheme:"
+msgstr "Couleur:"
+
+#: tt_like_widget.php:503
+msgid "Show Faces:"
+msgstr "Montrer les images:"
+
+#: tt_like_widget.php:504
+msgid "Don't forget to increase the Height accordingly"
+msgstr "N'oubliez pas d'augmenter la Hauteur en fonction"
+
+#: tt_like_widget.php:507
+msgid "Position"
+msgstr "Position"
+
+#: tt_like_widget.php:510
+msgid "Align:"
+msgstr "Alignement:"
+
+#: tt_like_widget.php:521
+msgid "Don't forget to adjust the Width accordingly if you choose to align right"
+msgstr "N'oubliez pas de réduire la Largeur si vous alignez a droite"
+
+#: tt_like_widget.php:522
+msgid "ex: reduce the Width to 100px"
+msgstr "ex: reduire la Largeur de 100px"
+
+#: tt_like_widget.php:525
+msgid "Show at Top:"
+msgstr "Montrer au dessus du billet:"
+
+#: tt_like_widget.php:529
+msgid "Show at Bottom:"
+msgstr "Montrer au dessous du billet:"
+
+#: tt_like_widget.php:533
+msgid "Show on Page:"
+msgstr "Montrer sur les pages:"
+
+#: tt_like_widget.php:537
+msgid "Show on Post:"
+msgstr "Montrer sur les billets:"
+
+#: tt_like_widget.php:541
+msgid "Show on Home:"
+msgstr "Montrer sur la page d'accueil:"
+
+#: tt_like_widget.php:545
+msgid "Show on Search:"
+msgstr "Montrer dans les recherches:"
+
+#: tt_like_widget.php:549
+msgid "Show on Archive:"
+msgstr "Montrer dans les archives:"
+
+#: tt_like_widget.php:553
+msgid "Margin Top:"
+msgstr "Marge en haut:"
+
+#: tt_like_widget.php:557
+msgid "Margin Bottom:"
+msgstr "Marge en bas:"
+
+#: tt_like_widget.php:561
+msgid "Margin Left:"
+msgstr "Marge a gauche:"
+
+#: tt_like_widget.php:565
+msgid "Margin Right:"
+msgstr "Marge a droite:"
+
+#: tt_like_widget.php:569
+msgid "Facebook Admin Page"
+msgstr "Administration Facebook"
+
+#: tt_like_widget.php:569
+msgid "For Advanced users only"
+msgstr "Pour utilisateurs avancés seulement"
+
+#: tt_like_widget.php:569
+msgid "Be sure to read the Help and Support section below in case of problem"
+msgstr "Lisez la section Aide et Support si vous avez des problèmes"
+
+#: tt_like_widget.php:572
+msgid "Numeric Facebook ID:"
+msgstr "Facebook ID (numérique):"
+
+#: tt_like_widget.php:572
+msgid "Your Facebook ID to manage your Fans and send them updates"
+msgstr "Mettre votre identifiant Facebook numérique pour gérer vos fans et leur envoyer des mise à jour"
+
+#: tt_like_widget.php:572
+#: tt_like_widget.php:588
+msgid "If you have several, separate them with commas."
+msgstr "Si vous en avez plusieurs, séparez les avec des virgules"
+
+#: tt_like_widget.php:573
+#: tt_like_widget.php:589
+msgid "Required if using XFBML"
+msgstr "Requis si vous utilisez XFBML"
+
+#: tt_like_widget.php:573
+msgid "(ex: 68310606562 and not markzuckerberg)"
+msgstr "(ex: 68310606562 et pas markzuckerberg)"
+
+#: tt_like_widget.php:576
+msgid "Image URL:"
+msgstr "URL de l'image:"
+
+#: tt_like_widget.php:580
+msgid "Use XFBML:"
+msgstr "Utiliser XFBML:"
+
+#: tt_like_widget.php:584
+msgid "Load XFBML Asynchronously:"
+msgstr "Utiliser XFBML asynchrone:"
+
+#: tt_like_widget.php:588
+msgid "Facebook App ID:"
+msgstr "Facebook Application ID:"
+
+#: tt_like_widget.php:588
+msgid "To get an App ID:"
+msgstr "Pour obtenir une Application ID:"
+
+#: tt_like_widget.php:588
+msgid "Create an  App"
+msgstr "Créez une Application"
+
+#: tt_like_widget.php:592
+msgid "Open Graph Options"
+msgstr "Options Open Graph"
+
+#: tt_like_widget.php:592
+msgid "For more information:"
+msgstr "Pour plus d'information:"
+
+#: tt_like_widget.php:595
+msgid "Latitude:"
+msgstr "Latitude:"
+
+#: tt_like_widget.php:599
+msgid "Longitude:"
+msgstr "Longitude:"
+
+#: tt_like_widget.php:603
+msgid "Street Address:"
+msgstr "Adresse:"
+
+#: tt_like_widget.php:607
+msgid "Locality:"
+msgstr "Ville:"
+
+#: tt_like_widget.php:611
+msgid "Region:"
+msgstr "Département:"
+
+#: tt_like_widget.php:615
+msgid "Postal Code:"
+msgstr "Code postal:"
+
+#: tt_like_widget.php:619
+msgid "Country:"
+msgstr "Pays:"
+
+#: tt_like_widget.php:624
+msgid "Email:"
+msgstr "Email:"
+
+#: tt_like_widget.php:628
+msgid "Phone:"
+msgstr "Téléphone:"
+
+#: tt_like_widget.php:632
+msgid "Fax:"
+msgstr "Fax:"
+
+#: tt_like_widget.php:637
+msgid "Type:"
+msgstr "Type:"
+
+#: tt_like_widget.php:654
+msgid "Help and Support"
+msgstr "Aide et Support"
+
+#: tt_like_widget.php:657
+msgid "Check the FAQ"
+msgstr "Lisez la FAQ"
+
+#: tt_like_widget.php:660
+msgid "Read the Plugin Homepage and its comments"
+msgstr "Lisez la page du plugin et ses commentaires"
+
+#: tt_like_widget.php:669
+msgid "Save Changes"
+msgstr "Sauver"
+
+#: tt_like_widget.php:678
+msgid "Support Like"
+msgstr "Supporter Like"
+
+#~ msgid "Description:"
+#~ msgstr "Description:"
+
+#, fuzzy
+#~ msgid "Show in RSS:"
+#~ msgstr "Monter sur les pages:"

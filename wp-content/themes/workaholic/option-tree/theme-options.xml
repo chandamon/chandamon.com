@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<trunk_wp_17_option_tree>
+  <row>
+    <id>1</id>
+    <item_id>general_default</item_id>
+    <item_title>General</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>1</item_sort>
+  </row>
+  <row>
+    <id>2</id>
+    <item_id>workaholic_logo</item_id>
+    <item_title>Logo Image</item_title>
+    <item_desc>Upload your custom logo image.</item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>2</item_sort>
+  </row>
+  <row>
+    <id>3</id>
+    <item_id>t_twitter_id</item_id>
+    <item_title>Twitter Feed</item_title>
+    <item_desc>Enter your Twitter name</item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>3</item_sort>
+  </row>
+  <row>
+    <id>4</id>
+    <item_id>workaholic_blog_id</item_id>
+    <item_title>Blog Category</item_title>
+    <item_desc>Select your blog category</item_desc>
+    <item_type>category</item_type>
+    <item_options></item_options>
+    <item_sort>4</item_sort>
+  </row>
+  <row>
+    <id>5</id>
+    <item_id>homepage</item_id>
+    <item_title>Homepage</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>5</item_sort>
+  </row>
+  <row>
+    <id>6</id>
+    <item_id>workaholic_homepage</item_id>
+    <item_title>Homepage Gallery</item_title>
+    <item_desc>Choose between either uploading a static group of images on the homepage or using posts to create the homepage image grids.</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Upload images, Post thumbnails</item_options>
+    <item_sort>6</item_sort>
+  </row>
+  <row>
+    <id>7</id>
+    <item_id>workaholic_home_images</item_id>
+    <item_title>Homepage Grid Images</item_title>
+    <item_desc>Upload images to be displayed on Homepage</item_desc>
+    <item_type>slider</item_type>
+    <item_options></item_options>
+    <item_sort>7</item_sort>
+  </row>
+  <row>
+    <id>8</id>
+    <item_id>workaholic_quote_one</item_id>
+    <item_title>Header Quote Line One</item_title>
+    <item_desc>Enter text to be displayed in header area.</item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>8</item_sort>
+  </row>
+  <row>
+    <id>9</id>
+    <item_id>workaholic_quote_two</item_id>
+    <item_title>Header Quote Line Two</item_title>
+    <item_desc>Enter text to be displayed in header area.</item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>9</item_sort>
+  </row>
+  <row>
+    <id>10</id>
+    <item_id>fonts</item_id>
+    <item_title>Fonts</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>10</item_sort>
+  </row>
+  <row>
+    <id>11</id>
+    <item_id>gpp_google_font</item_id>
+    <item_title>Font Parameter</item_title>
+    <item_desc>Add your desired font from &amp;lt;a href=&amp;quot;http://www.google.com/webfonts&amp;quot; target=&amp;quot;_blank&amp;quot; &amp;gt;Google Font Directory&amp;lt;/a&amp;gt;. Example: Droid+Serif</item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>11</item_sort>
+  </row>
+  <row>
+    <id>12</id>
+    <item_id>gpp_google_font_family</item_id>
+    <item_title>Font Family</item_title>
+    <item_desc>Integrate the fonts into your CSS by adding the CSS-friendly font family name. For example: Droid Serif.</item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>12</item_sort>
+  </row>
+  <row>
+    <id>13</id>
+    <item_id>gpp_google_font_weight</item_id>
+    <item_title>Font Weight</item_title>
+    <item_desc>If applicable, specify your desired font weight here. For example: 400</item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>13</item_sort>
+  </row>
+  <row>
+    <id>14</id>
+    <item_id>gpp_google_fonts_all</item_id>
+    <item_title>Apply Fonts to all</item_title>
+    <item_desc>Check this option to apply Google Fonts to entire site. If you do not wish to apply to entire site, you can use it individually in the Custom CSS textarea below.</item_desc>
+    <item_type>checkbox</item_type>
+    <item_options>Yes</item_options>
+    <item_sort>14</item_sort>
+  </row>
+  <row>
+    <id>15</id>
+    <item_id>custom_css</item_id>
+    <item_title>Custom CSS</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>15</item_sort>
+  </row>
+  <row>
+    <id>17</id>
+    <item_id>gpp_css</item_id>
+    <item_title>CSS</item_title>
+    <item_desc>Quickly add some CSS to your theme.  For example, to change the background to a light grey, add this:
+
+&amp;lt;code&amp;gt;body { background: #eaeaea; }&amp;lt;/code&amp;gt;</item_desc>
+    <item_type>css</item_type>
+    <item_options>5</item_options>
+    <item_sort>16</item_sort>
+  </row>
+</trunk_wp_17_option_tree>

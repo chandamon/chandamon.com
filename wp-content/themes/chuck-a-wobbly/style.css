@@ -1,0 +1,362 @@
+/* 
+Theme Name: Chuck A Wobbly
+Theme URI: http://vidar.xmgfree.com/themes
+Description: A CSS masterpiece gone very strange...
+Author: Vidar
+Author URI: http://vidar.xmgfree.com
+Version: 1.0
+*/
+
+html {
+	background: #A0BFD8;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	}
+
+body {
+	font: 72.5% Serif;
+	color: #000000;
+	margin:0;
+	padding:0;
+	text-align:center;
+	background: #A0BFD8;
+	}
+
+#rap {
+	background: url("suit.gif") repeat-y top; 
+	width: 760px;
+	\width: 780px;
+	w\idth: 760px;
+	margin:20px auto 0 auto;
+	padding:0;
+	text-align:justify;
+	}
+
+#head {
+	margin: 0 auto;
+	height: 197px;
+	width: 100%;
+	background: #A0BFD8 url("hat.gif") no-repeat bottom center; 
+	}
+	
+#content {
+	margin: 20px auto 0 auto;
+	padding: 0;
+	width: 600px;
+	font-size: 1.2em;
+	line-height:1.2em;
+	}
+
+#footer {
+	margin: 20px auto 0 auto;
+	padding:0;
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	font: 0.8em Sans-Serif;
+	line-height: 1.5em;
+	}
+
+* html #footer {
+	margin-left: 35px;
+	}
+
+.post {
+	text-align: justify;
+	margin: 0 auto;
+	width:80%
+	}
+
+.post_nav {
+	text-align: justify;
+	margin: 0 auto;
+	width:80%
+	}
+
+* html .post_nav {
+	margin-left: 50px;
+	}
+
+.entry {
+	margin-top: 15px;
+	border-bottom: 1px solid #333;
+	}
+
+.topnavi {
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-right: 80px;
+	text-align: right;
+	list-style: none;
+	}
+
+.topnavi li {
+	display:inline;
+	font:1em Sans-Serif;
+	padding:0 5px;
+	margin-right:5px;
+	}
+
+small {
+	font: 0.8em Sans-Serif;
+	line-height: 1.5em;
+	}
+
+.tiny {
+	font-family: Serif;
+	font-size: 0.9em;
+	}
+
+.single_tiny {
+	font-family: Sans-Serif;
+	font-size: 0.9em;
+	text-align:center;
+	padding-top:0;
+	margin-top:0;
+	}
+
+.comment_link {
+	font-family: Sans-Serif;
+	font-size: 1em;
+	text-align:right;
+	}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	text-decoration: none;
+	color: #000;
+	font: bold 25px Georgia, 'Century Gothic', 'Lucida Grande', Serif;
+	margin: 0;
+	}
+
+.description {
+	font: bold 15px Georgia, 'Century Gothic', 'Lucida Grande', Serif;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	padding-top: 40px;
+	}
+
+h2 {
+	font: normal 22px Georgia, 'Century Gothic', 'Lucida Grande', Sans-Serif;
+	line-height: 1.1;
+	color: #333;
+	text-decoration: none;
+	margin: 0;
+	}
+
+h1 a {
+	color: #000;
+	text-decoration: none;
+	}
+
+h1 a:hover {
+	color: #000;
+	text-decoration: none;
+	}
+
+h1 a:visited {
+	color:#993300;
+	}
+
+h2 a {
+	color: #CAA149;
+	text-decoration: none;
+	}
+
+h2 a:hover {
+	color: #CAA149;
+	text-decoration: underline;
+	}
+	
+a:visited {
+	color: #147;
+	}
+
+a {
+	color: #51833B;
+	text-decoration: none;
+	font-weight:bold;
+	}
+
+a:hover {
+	color: #cc3300;
+	text-decoration: underline;
+	}
+
+a img {
+	border:none;
+	}
+
+acronym, abbr {
+	border-bottom:1px solid #000;
+	}
+
+html>body .entry ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 10px;
+	text-indent: -10px;
+	} 
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ul {
+	list-style: square inside;
+	}
+
+.entry ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+ol li {
+	list-style: decimal outside;
+	}
+
+.center {
+	text-align: center;
+	}
+
+blockquote {
+	font-style:italic;
+	padding-bottom:0;
+	margin-bottom:-35px;
+	}
+	
+.alignright {
+	float: right;
+	text-decoration:none;
+	}
+	
+.alignleft {
+	float: left;
+	text-decoration:none;
+	}	
+	
+.comment_div h1 {
+	font: normal 18px Georgia, 'Century Gothic', 'Lucida Grande', Serif;
+	}
+	
+.comment_div {
+	padding-top: 30px;
+	margin-bottom: -15px;
+	font: 14px Serif;
+	margin: 0 0 0 50px;
+	width:80%
+	}
+
+.comment_div li {
+	list-style: none;
+	margin-bottom: 25px;
+	}
+
+.comment_div h2 {
+	margin-top: -25px;
+	margin-bottom: 0px;
+	padding-bottom:0px;
+	}
+
+.title {
+	font: 500 22px Georgia, 'Century Gothic', 'Lucida Grande', Verdana, Sans-Serif;
+	color:#F19292;
+	}
+	
+#commentlist {
+	margin-top: 15px;
+	padding: 0;
+	text-align: justify;
+	}
+
+#commentlist li {
+	margin: 15px 0 3px;
+	padding: 5px 10px 3px;
+	list-style: none;
+	}
+
+#commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+li #postcomment {
+	list-style-image:none;
+	list-style-type:none;
+	}
+
+#commentform #author, #commentform #email, #commentform #url, #commentform textarea {
+	padding: 4px;
+	background: #ffffff;
+	border: 1px solid #bbb;
+	width: 70%;
+	}
+
+#commentform {
+	padding: 4px;
+	width: 650px;
+	}
+			
+.author {
+	padding: 15px;
+	padding-bottom: 23px;
+	padding-top: 10px;
+	background-color: #F5F5F5;
+	border-bottom: 1px dotted #999;
+	display:block;
+	margin-bottom: 25px;
+	}
+
+.author .title {
+	color:#147;
+	}
+
+.other {
+	padding: 15px;
+	padding-bottom: 23px;
+	padding-top: 10px;
+	display:block;
+	margin-bottom: 25px;
+	border-bottom: 1px dotted #333;
+	}
+
+.poster {
+	text-align:left;
+	margin-top:10px;
+	}
+
+span.postitle {
+	font: normal 22px Georgia, 'Century Gothic', 'Lucida Grande', Verdana, Sans-Serif;
+	line-height: 1.1;
+	color: #333;
+	text-decoration: none;
+	margin: 30px auto 0 auto;
+	text-align:center;
+	}
+
+code {
+	font: 14px monospace;
+	}
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ul li:before {
+	content: "\00BB \0020";
+	}
+
+ol li {
+	list-style: decimal outside;
+	}	

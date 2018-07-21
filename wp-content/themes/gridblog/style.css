@@ -1,0 +1,136 @@
+/*  
+Theme Name: gridblog
+Theme URI: http://www.blogohblog.com
+Description: The "Grid Blog" is a minimalistic WordPress theme built by Jai Nischal Verma of <a href="http://www.blogohblog.com" title="Free WordPress Themes">Blog Oh! Blog</a> and falls under a Creative Commons License.
+Version: 1.0
+Author: Jai Nischal Verma
+Author URI: http://www.blogohblog.com
+*/
+
+
+#sbtabs {clear:both; margin-top:10px;}
+.tabc {margin: 0px;padding: 0px;border: 5px solid #bbb;background: url(img/mbg4.jpg) repeat-x #F4F4F6;background-position:left bottom;}
+.tabci {margin: 0px;padding: 10px;border-left: 1px solid #ddd;border-top: 1px solid #ddd;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.tabmc {padding: 0px 0px 0px 0px;height: 27px;background: url(img/menubar.gif) no-repeat;background-position:-2px 0;}
+#tabm li {margin: 0px;padding: 7px 5px 2px 0px;font-size: 11px;line-height: normal;float: left;list-style: none;cursor: pointer;border-bottom: none;}
+#tabm .first {padding: 7px 5px 2px 6px;}
+#tabm li a, #tabm li a:visited {margin: 0px;padding: 3px 6px 3px 6px;color: #4C4C4C;text-decoration: none;display: block;}
+#tabm li a:hover, #tabm li.ui-tabs-selected a {background:url(img/mbg7.jpg) repeat-x;color: #fff;text-decoration: none;}
+.meta, .posted {margin: 0px 0px 15px 0px;padding: 0px;color: #727171;font-size: 12px;}
+
+
+.meta a, .meta a:visited {color: #999;text-decoration: none;border-bottom: 1px solid #ddd;}
+.meta a:hover {color: #f00;}
+.title a, .title a:visited {color: #666;font-weight: bold;font-size:13px;padding-top:3px;padding-bottom:5px;}
+.title a:hover {color: #222;}
+#recent li, #pop li, #comm li, #feat li, #hdown li {margin: 0px;padding: 7px 0px 7px 0px;line-height: 16px;list-style-type: none;border-bottom: 1px solid #DCECF9;}
+#pop .title a, #feat .title a {font-size:13px;color:#6658A6}
+#recent .title a {color: #555; font-size: 1.3em;letter-spacing:-0.04em;line-height: 1.05em; font-weight:normal;padding-left:10px;background:url(img/bullet.gif) no-repeat 0 7px;}
+#recent .title a:hover {color: #d20;}
+
+#nav {margin-left:10px}
+
+#nav li {list-style:none;position:relative;float:left;z-index:2;}
+#links #nav li ul {position:absolute;top:30px;left:0px;display:none;z-index:1000;width:200px;opacity:.85;background:#4D4D4D;}
+#links #nav li:hover ul {display:block;}
+#links #nav li ul li {list-style:none;font-size:12px;float:left;clear:both;}
+#links #nav li ul li a {color:#ddd;width:180px;line-height:2.5em;text-decoration:none;display:block;border-bottom:1px solid #1A2736;text-indent:0;height:auto;padding-left:10px;padding-right:10px;}
+#links #nav li ul li a:hover {color:#fff;background: #222;  background-repeat: no-repeat; background-position: right center;}
+
+.ui-tabs-hide { display: none; }
+
+
+
+/*++++++ BODY ++++++++*/
+body {font-family: "Century Gothic"; color:#000000;}
+
+/*++++++ HEADER ++++++++*/
+#header {width:950px; height:100px; background: url(http://chandamon.com/site/banner1.gif) no-repeat}
+#header h1 {margin:0;padding:0;}
+#header h1 a {display:block; text-decoration:none; padding-bottom:10px;}
+
+/*++++++ LINKS ++++++++*/
+a, a:link, a:visited {color: #006699; text-decoration:none; font-weight:bold;}
+a:hover {color:#333333; text-decoration:underline;}
+
+/*++++++ FEATURED CONTENT ++++++++*/
+.fcontent {margin-top:5px;}
+.fcontent li {padding-top:3px;font-size:11px; color:#727171;}
+
+/*++++++ NAVIGATION ++++++++*/
+#menu{float:right; padding-right:10px; font-size:14px;}
+#menu li{display:inline;list-style:none; padding:3px 14px 1px 15px; margin-right:5px; }
+.page_item a:link, .page_item a:visited{color: #006699; font-weight:normal; }
+.page_item a:hover {color: #000000;}
+.current_page_item a:link, .current_page_item a:visited{color: #999999; font-weight:normal;}
+
+/*++++++ ENTRY ++++++++*/
+.allinfos {margin:0 0 15px 0;}
+.post {margin-bottom:10px; text-align:justify; font-style:normal;}
+.post h2 {font-size:13px;}
+.left {float:left; min-height:240px;}
+.right {float:right; min-height:240px;}
+.category {background-color: #F4F4F4; padding:0px 0 5px 10px; margin-bottom:5px;}
+
+/*++++++ SIDEBARS ++++++++*/
+#sidebar1 h2{font-size:1.5em;line-height:1;margin-bottom:1em;font-weight:normal;}
+#sidebar1 ul{list-style-type:none; margin-bottom:20px;}
+#sidebar1 ul li ul{font-style:normal;margin-top:5px;padding:0px;}
+#sidebar1 ul li ul li{border:0; list-style: url(images/bullet.gif); margin:0 0px 5px;padding:0 0 5px 0px;}
+
+#sidebar2 h2{font-size:1.5em;line-height:1;margin-bottom:1em;font-weight:normal;}
+#sidebar2 ul{list-style-type:none; margin-bottom:20px;}
+#sidebar2 ul li ul{font-style:normal;margin-top:5px;padding:0px;}
+#sidebar2 ul li ul li{border:0; list-style: url(images/bullet.gif); margin:0 0px 5px;padding:0 0 5px 0px;}
+
+.sidebars {margin-top:20px;}
+
+/*++++++ COMMENTS ++++++++*/
+#comments {font-size:13px; font-weight:lighter; padding-top:10px; border-top:1px solid #CCCCCC; margin-top:10px;}
+.commentlist{padding:20px;}
+.commentlist p{padding-top:5px;}
+#author, #email, #url {width:12em;font-size:12px; color:#666666;padding:3px; margin-right:5px; border:1px solid #cccccc;float:left;}
+#submit{font:bold 1em Arial;margin-bottom:15px;margin-top:5px;padding:2px; color:#FFFFFF; background-color:#006699; border:none;}
+#respond{padding-top:20px;padding-bottom:10px; font-weight:lighter;}
+#comment{width:100%;border:1px solid #CCCCCC;font:12px Arial;color:#666666;}
+h3 #comments {font-size:13px;}
+#commentform h2 {font-size:14px; font-weight:normal;}
+
+/*++++++ SEARCHBAR ++++++++*/
+#topsearch{float:right}
+#ls{ border:1px solid #E1E1E1; width:10em; color: #333333;font-family:"Century Gothic";padding:2px 5px 2px 5px;}
+
+/*++++++ MISCELLANEOUS ++++++++*/
+.alignright{float:right; padding-bottom:20px; font-size:14px;}
+.alignleft{float:left; padding-bottom:20px; font-size:14px;}
+img.wp-smiley{border:0;padding:0;}
+acronym,abbr,span.caps{cursor:help;}
+acronym,abbr{border-bottom:1px dashed #999;}
+img.centered{display:block;margin-left:auto;margin-right:auto;}
+img.alignright{display:inline;margin:0 0 2px 7px;padding:4px;}
+img.alignleft{display:inline;margin:0 7px 2px 0;padding:4px;}
+blockquote{background:#F1F8FF none repeat scroll 0 0;
+
+margin:5px 3px 0 0;
+padding:8px 5px 5px 5px;
+}
+blockquote cite{display:block;margin:5px 0 0;}
+
+/*++++++ GALLERY ++++++++*/
+.gallery {text-align:center;}
+.gallery img {padding:2px; height:100px; width:100px;}
+.gallery a:hover {background-color:#ffffff;}
+.attachment {text-align:center;height:200px;}
+.attachment img { padding:2px; border:1px solid #999999;}
+.attachment a:hover {background-color:#FFFFFF;}
+.imgnav {text-align:center; display:block;}
+.imgleft {float:left;}
+.imgleft a:hover {background-color:#FFFFFF;}
+.imgleft img{ padding:2px; border:1px solid #999999; height:100px; width:100px;}
+.imgright {float:right;}
+.imgright a:hover {background-color:#FFFFFF;}
+.imgright img{ padding:2px; border:1px solid #999999; height:100px; width:100px;}
+
+/*++++++ GRAVATARS ++++++++*/
+.gravs {margin-top:20px;}
+.avatar {float:left; margin-right:5px; margin-bottom:5px; padding:3px; border:1px solid #999999;}
