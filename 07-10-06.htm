@@ -1,0 +1,575 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+
+<html>
+
+<head>
+<title>生活易</title>
+<meta http-equiv="Content-Type" content="text/html;charset=big5">
+
+<link rel="stylesheet" href="sinclude/css/LCSD_table.css">
+<link rel="stylesheet" href="sinclude/css/LCSD_font.css">
+
+
+<style type="text/css">
+body { 
+	background-image: url("tchinese/images/lcsd_bg.gif");
+	background-repeat: no-repeat;
+} 
+</style>
+
+
+</head>
+
+<script language="javascript">
+<!--
+  // Image Utility -- BEGIN
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+// Image Utility -- END
+
+  // disable_rightclick -- BEGIN
+
+function right(e) {
+  if (navigator.appName == 'Netscape' && (e.which == 2 || e.which == 3)) {
+    alert('Right click function is disabled!');
+    return false;
+  }
+  else if (navigator.appName == 'Microsoft Internet Explorer' &&
+    (event.button==2 || event.button == 3)) {
+    alert('Right click function is disabled!');
+    return false;
+  }
+  return true;
+}
+
+document.onmouseup=right;
+if (document.layers) {
+  window.captureEvents(Event.MOUSEDOWN);
+  window.onmousedown=right;
+}
+
+document.oncontextmenu=new Function("return false");
+
+// disable_rightclick -- END
+
+  // common utils
+
+// ampersand character should be the last item on the lists to avoid any tricky input
+var __specialCharList = ["\"", "<", ">", "&"];
+var __specialCharHTMLCodeList = ["&quot;", "&lt;", "&gt;", "&amp;"];
+
+var ENG_SMARTIDCARD_REMINDER_GIFT = "<p class=\"EngArial4B\"><font color=\"#FF1234\">Please don\'t forget to take your Smart ID Card back.</font></p>";
+var CHN_SMARTIDCARD_REMINDER_GIFT = "<p class=\"Def4B\"><font color=\"#FF1234\">請緊記取回你的智能身份證。</font></p>";
+
+function htmlEncode(str)
+{
+	var srcStr = new String(str);
+	var encodedStr = "";
+	var found = false;
+	var i, j;
+
+	for (i = 0; i < srcStr.length; i++) {
+		found = false;
+		for (j = 0; j < __specialCharList.length; j++) {
+			if (srcStr.charAt(i) == __specialCharList[j]) {
+				found = true;
+				encodedStr += __specialCharHTMLCodeList[j];
+				break;
+			}
+		}
+
+		if (!found)
+			encodedStr += srcStr.charAt(i);
+	}
+
+	return encodedStr;
+}
+
+function htmlDecode(str)
+{
+	var decodedStr = new String(str);
+	var sRegExp;
+	var i;
+
+	for (i = 0; i < __specialCharHTMLCodeList.length; i++) {
+		sRegExp = new RegExp(__specialCharHTMLCodeList[i], "gi");
+		decodedStr = decodedStr.replace(sRegExp, __specialCharList[i]);
+	}
+
+	return decodedStr;
+}
+
+function addQueryStringToURL(url, queryString)
+{
+  var retURL = url;
+
+  if (queryString.length == 0)
+    return url;
+
+  if (url.indexOf("?") >= 0)
+    retURL = url + "&" + queryString;
+  else
+    retURL = url + "?" + queryString;
+
+  return retURL;
+}
+
+function logURLVisit(redirectURL, appID, topic, subtopic, lang, client, clientLoc, redirectFlag)
+{
+  var logURL = "/common/LogHyperLink.asp";
+  var queryString = "raddr=" + escape(redirectURL) + "&appid=" + escape(appID)
+    + "&topic=" + escape(topic) + "&subtopic=" + escape(subtopic) + "&language=" + escape(lang)
+    + "&client=" + escape(client) + "&loc=" + escape(clientLoc) + "&redirectFlag=" + escape(redirectFlag);
+  var url = logURL + "?" + queryString;
+
+  parent.frames["main"].document.location.replace(url);
+  return true;
+}
+
+function checkParentURL(expectedParentPath, expectedParentPage, errorPage)
+{
+	var expectedParentURL = new String(expectedParentPath + expectedParentPage);
+	expectedParentURL = expectedParentURL.toLowerCase();
+
+	var currentParentURL = new String(parent.location);
+	currentParentURL = currentParentURL.toLowerCase();
+
+	var idx = currentParentURL.indexOf("?");
+	if (idx > 0)
+		currentParentURL = currentParentURL.substring(0, idx);
+	
+	if (currentParentURL != expectedParentURL)
+		location.href = addQueryStringToURL(errorPage, "ErrString=0000S0201;");
+}
+
+function getSmartIDCardReminder(lang)
+{
+	if (lang == "tchinese")
+		return CHN_SMARTIDCARD_REMINDER_GIFT;
+	else 
+		return ENG_SMARTIDCARD_REMINDER_GIFT;
+}
+
+
+
+  //var jsContainer = eval(frames["javascript_container"]);
+  // jsContainer.setPaymentInProgress(false);
+
+  function getPaymentMethod() {
+    return opener.jsContainer.getPaymentMethod();
+  }
+
+  function preLoadImages()
+  {
+      MM_preloadImages("tchinese/images/main_off_f2.gif", "#1");
+      MM_preloadImages("tchinese/images/home_off_f2.gif", "#2");
+      MM_preloadImages("tchinese/images/abort_off_f2.gif", "#3");
+      MM_preloadImages("tchinese/images/back_2.gif", "#4");
+  }
+
+
+  function saveToProfile() {
+      window.location = "from_normal_to_profile.jsp?ACCESS_KEY=";
+  }
+
+  function print_ack()
+  {
+      
+          window.print();
+      
+  }
+
+  function doOnload()
+  {
+
+      //checkParentURL("https://appw.esdlife.com/appc003/", "home.jsp", "error_page.jsp");
+
+      preLoadImages();
+
+      //jsContainer.setDoneStatus();
+      
+  }
+
+  function saveScreen()
+  {
+      if(navigator.userAgent.toLowerCase().indexOf("mac")!=-1)
+      {
+          alert("To save this screen, please press 'Command-S'");
+      }
+      else
+      {
+          document.execCommand('SaveAs', null, ' ');
+      }
+  }
+
+//-->
+</script>
+
+<body bgcolor="#FFFFFF" onload="doOnload();" topmargin="2">
+
+
+		
+<table height="80" width="760" border="0" cellspacing="0" cellpadding="0" topmargin="0">
+    <tr>
+        <td width="153"><img src="tchinese/images/shim.gif"></td>
+        <td>
+            <div><table width="100%" border="0" cellspacing="2" cellpadding="0">
+<tr>
+<td valign="middle" align="center">
+<script language="JavaScript">
+<!--
+var code = '';
+var now = new Date();
+var nIndex = now.getTime();
+document.write('<s' + 'cript src="https://adv.esdlife.com/adbanner/admentor/scriptinject.asp?F=8&Z=515&N=1&nocache=' + nIndex + '">');
+document.write('</' + 's' + 'cript>');
+//-->
+</script>
+<script language="JavaScript">
+<!--
+document.write(code);
+//-->
+</script>
+<noscript>
+<a href="https://adv.esdlife.com/adbanner/admentor/adclick.asp?F=8&Z=515&N=1" target="_blank">
+<img src="https://adv.esdlife.com/adbanner/admentor/adserve.asp?F=8&Z=515&N=1" border="0" alt="廣告"></a>
+</noscript>
+
+</td>
+<td valign="middle" align="center">
+<script language="JavaScript">
+<!--
+var code = '';
+var now = new Date();
+var nIndex = now.getTime();
+document.write('<s' + 'cript src="https://adv.esdlife.com/adbanner/admentor/scriptinject.asp?F=19&Z=515&N=1&nocache=' + nIndex + '">');
+document.write('</' + 's' + 'cript>');
+//-->
+</script>
+<script language="JavaScript">
+<!--
+document.write(code);
+//-->
+</script>
+<noscript>
+<a href="https://adv.esdlife.com/adbanner/admentor/adclick.asp?F=19&Z=515&N=1" target="_blank">
+<img src="https://adv.esdlife.com/adbanner/admentor/adserve.asp?F=19&Z=515&N=1" border="0" alt="廣告"></a>
+</noscript>
+
+</td>
+<td valign="middle" align="center">
+<a href="javascript:void(0)" onClick="window.open('/common/chiadv_disclaimer.htm', 'disclaimer', 'width=220,height=240')">
+<img src="/common/images/chiadv.gif" border="0" alt="廣告聲明"></a>
+
+</td>
+</tr>
+</table></div>
+
+        </td>
+    </tr>
+</table>
+
+      <table width="760" border="0" cellspacing="5" cellpadding="0">
+
+    <tr>
+        <td valign="top">
+            <div align="center"><p><br><br><br></p>
+
+
+				<img src="tchinese/images/lcsdhead02.gif" alt="康體通-租訂康樂設施">
+			</div>
+
+        <table width="520" border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="1">
+        <tr>
+          <td height="19" valign="top" class="EngArial1B">
+            <b>確認申請</b>
+          </td>
+        </tr>
+      </table>
+      </span><br>
+<table width=580 border=0 cellpadding=0 cellspacing=0>
+    <tr>
+        <td>
+            <input type="button" value="列印本頁" onclick="javascript:print_ack();">
+        </td>
+        <td>
+        <table>
+			<script language="JavaScript" type="text/javascript">
+			if (navigator["appName"].indexOf("Microsoft Internet Explorer")!=-1) {
+			document.writeln("<tr>");
+			document.writeln("<td align=\"left\"><form><font><br><input type=\"button\" name=\"save\" value=\"儲存本頁\" onclick=\"saveScreen();\"></font></form></td>");
+			document.writeln("</tr>");
+			} else {
+				document.writeln("<tr>");
+				document.writeln("<td colspan=\"2\"><font><br>儲存此頁確認通知書：<br></font></td>");
+				document.writeln("</tr>");
+				document.writeln("<tr valign=\"top\">");
+				document.writeln("<td><font>1.</font></td>");
+				document.writeln("<td><font>選擇'文件'，然後按'另存新檔'。</font></td>");
+				document.writeln("</tr>");
+				document.writeln("<tr valign=\"top\">");
+				document.writeln("<td><font>2.</font></td>");
+				document.writeln("<td><font>選擇確認通知書所要被儲存的位置，然後輸入檔案名稱。</font></td>");
+				document.writeln("</tr>");
+				document.writeln("<tr valign=\"top\">");
+				document.writeln("<td><font>3.</font></td>");
+				document.writeln("<td><font>按'儲存'存檔。</font></td>");
+				document.writeln("</tr>");
+			}
+			</script>
+        </table>
+        </td>
+    </tr>
+</table>      
+      <br>
+      <font class="EngArial1">
+        
+        你的 ESD 參考編號是 <font class="EngArial1B"><b>2006 0930 0000 5004</b></font><br>
+      </font>
+      <span class="EngArial1">交易日期及時間： 30/09/2006 15:47</span><br>      
+      <hr>
+
+      <font class="line">
+        <table width="100%" border="1" cellspacing="1"  cellpadding="0" bgcolor="#FFFFFF">
+  <tr bgcolor="#FFFFFF">
+    <td align="left" bgcolor="#FFFFFF" width="73%">
+      <font class="EngArial1B"><b>租訂資料        </b></font>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="1" cellspacing="1" cellpadding="0" bgcolor="#FFFFFF">
+  <tr bgcolor="#FFFFFF">
+    <td width="40%" valign="top" bgcolor="#FFFFFF" align="center"><font class="EngArial1">香港身份證號碼</font></td>
+    <td bgcolor="#FFFFFF" width="60%"><font class="EngArial1">Z67*869(*)</font></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="40%" valign="top" bgcolor="#FFFFFF" align="center">
+      <font class="EngArial1">設施        </font>
+    </td>
+    <td bgcolor="#FFFFFF" width="60%">
+      <font class="EngArial1">羽毛球場      </font>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td valign="top" bgcolor="#FFFFFF" align="center" width="40%">
+      <font class="EngArial1">場地        </font>
+    </td>
+    <td bgcolor="#FFFFFF" width="60%">
+      <font class="EngArial1">良田體育館         </font>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td valign="top" bgcolor="#FFFFFF" align="center" width="40%">
+      <font class="EngArial1">場地地址及電話號碼        </font>
+    </td>
+    <td bgcolor="#FFFFFF" width="60%">
+      <font class="EngArial1">新界屯門田景�h停車場四字樓 (電話: 2467 1594/2467 1238)
+            </font>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td valign="top" bgcolor="#FFFFFF" align="center" width="40%">
+      <font class="EngArial1">設施地點        </font>
+    </td>
+    <td bgcolor="#FFFFFF" width="60%">
+      <font class="EngArial1">主場       </font>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td valign="top" bgcolor="#FFFFFF" align="center" width="40%">
+      <font class="EngArial1">日期        </font>
+</td>
+    <td bgcolor="#FFFFFF" width="60%">
+      <font class="EngArial1">07/10/2006 (星期六)           </font>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="40%" valign="top" bgcolor="#FFFFFF" align="center">
+      <font class="EngArial1">備註            </font>
+</td>
+    <td bgcolor="#FFFFFF" width="60%">
+      <font class="EngArial1">&nbsp;      </font>
+    </td>
+  </tr>
+</table>
+<br><table width="100%" border="1" cellspacing="1" cellpadding="0" bgcolor="#FFFFFF">
+  <tr bgcolor="#FFFFFF">
+    <td align="center" bgcolor="#FFFFFF" width="5%">
+      <font class="EngArial1B"><b>&nbsp</b></font>    </td>    <td align="center" bgcolor="#FFFFFF" width="20%">
+      <font class="EngArial1B"><b>租訂編號        </b></font>    </td>    <td align="center" bgcolor="#FFFFFF" width="20%">
+      <font class="EngArial1B"><b>時間        </b></font>    </td>    <td align="center" bgcolor="#FFFFFF" width="15%">
+      <font class="EngArial1B"><b>設施/ 球場編號        </b></font>    </td>    <td align="center" bgcolor="#FFFFFF" width="40%">
+      <font class="EngArial1B"><b>收費      </b></font>    </td>  </tr>  <tr bgcolor="#FFFFFF">
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="5%">
+      <font class="EngArial1"> 1        </b></font>
+    </td>
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="20%">
+      <font class="EngArial1">971600104120        </font>
+    </td>
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="25%">
+      <font class="EngArial1">上午 10:00 - 上午 11:00        </font>
+    </td>
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="10%">
+      <font class="EngArial1">4&nbsp;      </font>
+    </td>
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="40%">
+      <font class="EngArial1">港幣66.00元 (標準收費設空氣調節)        </font>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="5%">
+      <font class="EngArial1"> 2        </b></font>
+    </td>
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="20%">
+      <font class="EngArial1">971600104121        </font>
+    </td>
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="25%">
+      <font class="EngArial1">上午 11:00 - 下午 12:00        </font>
+    </td>
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="10%">
+      <font class="EngArial1">1&nbsp;      </font>
+    </td>
+    <td valign="top" align="center" bgcolor="#FFFFFF" width="40%">
+      <font class="EngArial1">港幣66.00元 (標準收費設空氣調節)        </font>
+    </td>
+  </tr>
+</table>
+
+        <span class="EngArial1">已繳交的費用: 港幣132.00元</span><br>
+        
+      </font>
+      <hr>
+      <font class="EngArial1">
+        申請人須知：<br>
+        1) 申請人可在指定時間內使用設施/參加活動；<br>
+        2) 申請使用設施/參加活動的人士報到時必須同時出示確認回條及身分證明文件，否則不得使用設施/參加活動；<br>
+        3) 確認回條不得作轉讓/退款/交換之用；<br>
+        4) 申請使用設施/參加活動的人士須遵守有關的規定；<br>
+        5) 申請優惠收費的人士必須出示證件，證明其符合優惠資格；<br>
+        6) 確認回條上的資料如被更改，即告作廢；<br>
+        7) 如遇惡劣天氣，租用人往場地前請先向職員查詢有關場地或其設施會否暫時關閉；<br>
+        8) 如需其他服務，請利用上述電話號碼與場館的管理人員聯絡。
+      </font>
+      <hr>
+      <span class="EngArial1">
+        你以
+        <script language="JavaScript">
+        <!--
+          document.open();
+          document.write(getPaymentMethod());
+          document.close();
+        //-->
+        </script>
+        繳費。
+      </span>
+      <br>
+      <font class="EngArial1">
+        
+        你的 ESD 參考編號是 <font class="EngArial1B"><b>2006 0930 0000 5004</b></font><br>
+        如有查詢，請致電<i>生活易</i>客戶服務熱線 (852) 3151 2222 或電郵致 <a href="mailto:support@esdlife.com">support@esdlife.com</a>，並提供此參考編號。<br>
+        你可進入此服務，使用以上的 ESD 參考編號再次列印確認通知書。<br><br>
+      </font>      
+    </td>
+  </tr>
+</table>
+
+        
+
+</body>
+</html>
